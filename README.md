@@ -129,6 +129,18 @@ Este projeto é um sistema full stack desenvolvido para extrair dados relevantes
 
        Isso irá parar e remover o contêiner `my-postgres`.
 
+5. Crie um arquivo .env no diretório raiz e adicione os detalhes de conexão do seu banco de dados PostgreSQL:
+
+    ```bash
+    DB_URL="postgresql://user:password@localhost:5432/database"
+    ```
+
+6. Execute o comando de migração do Prisma para criar o banco de dados e as tabelas:
+
+    ```bash
+    npx prisma migrate dev
+    ```
+
 ## Endpoints
 
 ### Obter todas as faturas
@@ -174,6 +186,8 @@ Substitua {id_fatura} pelo ID da fatura que você deseja excluir.
 *   dotenv: "^10.0.0"
 *   nodemon: "^2.0.14"
 *   body-parser: "^1.19.0"
+*   prisma: "^3.3.0"
+*   @prisma/client: "^3.3.0"
 
 ## Contribuição
 
