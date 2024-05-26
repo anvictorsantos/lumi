@@ -179,6 +179,14 @@ Substitua {id_fatura} pelo ID da fatura que você deseja atualizar.
 
 Substitua {id_fatura} pelo ID da fatura que você deseja excluir.
 
+## Testes
+
+Para executar os testes desenvolvido com Jest, você precisa rodar o seguinte comando:
+
+    ```bash
+    npx jest
+    ```
+
 ## Dependências
 
 *   express: "^4.17.1"
